@@ -9,4 +9,5 @@ class funcionarioSerializer(serializers.ModelSerializer):
                  'identificador',
                  'ano',
                  'atualizacao',
+                 'image',
        )
