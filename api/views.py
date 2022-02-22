@@ -9,10 +9,10 @@ class funcionarioApiView(generics.ListCreateAPIView):
     queryset = funcionario.objects.all()
     serializer_class = funcionarioSerializer
     filter_backends= [DjangoFilterBackend]
-    filterset_fields = ['usuario']
+    filterset_fields = ['usuario','identificador']
 
 class funcionariosApiView(generics.RetrieveUpdateDestroyAPIView):
     queryset = funcionario.objects.all()
     serializer_class = funcionarioSerializer
     filter_backends= [DjangoFilterBackend]
-    filterset_fields = ['usuario']
+    filterset_fields = ['usuario', 'identificador']
