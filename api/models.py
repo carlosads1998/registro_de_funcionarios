@@ -18,6 +18,8 @@ class funcionario(models.Model):
     STATUS_CHOICES = (
         ('ativo', 'empregado'),
         ('desativado', 'demitido'),
+        ('ferias', 'ferias'),
+        ('afastado', 'afastamento'),
     )
     SEXO_CHOICES = (
         ('F', 'Feminino'),
