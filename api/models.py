@@ -15,21 +15,7 @@ class Base(models.Model):
                                              
 
 class funcionario(models.Model):
-    STATUS_CHOICES = (
-        ('ativo', 'empregado'),
-        ('desativado', 'demitido'),
-        ('ferias', 'ferias'),
-        ('afastado', 'afastamento'),
-    )
-    SEXO_CHOICES = (
-        ('F', 'Feminino'),
-        ('M', 'Masculino'),
-        ('N', 'Prefiro não informar'),
-    )
     
-    
-    sexo= models.CharField(max_length = 20, choices=SEXO_CHOICES, default=1)
-    status=models.CharField(max_length=20, choices=STATUS_CHOICES, default=1)
     nome = models.CharField(max_length=250)
     usuario = models.CharField(max_length=100, unique=True)
     identificador = models.IntegerField(unique=True)
