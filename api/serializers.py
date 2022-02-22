@@ -4,12 +4,12 @@ from .models import funcionario
 class funcionarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = funcionario
-        fields =('nome',
+        fields =(
+                'id',
+                'nome',
                  'usuario',
                  'identificador',
                  'ano',
                  'atualizacao',
                  'image',
-                 
-                 
        )
