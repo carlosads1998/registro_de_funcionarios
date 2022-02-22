@@ -1,11 +1,40 @@
 ### Criei um formulario para registrar funcionarios, dessa forma a empresa tenha os dados organizados dos seus funcionarios e mantendo a organização.
 
 
-### Endpoints + METODOS GET/PUT/DELETE
+## Endpoints
 
-- **api/v1/funcionario** = cadastrar um funcionario
-- **api/v1/funcionario/id** = editar ou deletar o cadastro de um funcionario
+| Endpoint | Método | Ação |
+|--|--|--|
+| /api/v1/funcionario/ | GET | Listar os funcionarios |
+| /api/v1/funcionario/:id| GET | Informação de um funcionario |
+| /api/v1/funcionario/:id| DELETE | Deletar os dados de um funcionario |
 
+## DEPLOY
+
+- Criar o ambiente virtual
+```
+python -m venv venv
+```
+- Ative o ambiente
+```
+.\Venv\Scripts\activate
+```
+- instalar os pacotes necessários para executar o projeto
+```
+pip install -r requirements.txt
+```
+- Execute a criação de tabela no banco de dados
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+- criando um super usuario para executar o projeto _(opcional)_
+```
+python manage.py create superuser
+```
+- ao final desse passo o projeto sera executado no endereço:
+
+[127.0.0.1:8000](http://127.0.0.1:8000/)
 ### MODELO_DE_CADASTRO (JSON)
 ```
 {
@@ -20,17 +49,10 @@
 ### A IMPLEMENTAR
 -  status: 'empregado' ou 'demitido'
 
-### EXECUTANDO_O_PROJETO:
-
-- Executando pelo:
-python manage.py runserver
-o endereço será 127.0.0.1:8000 
-
 [link](http://127.0.0.1:8000/) 
 
 *HEROKU
-
--cads-06.herokuapp.com
-
-[link](https://cads-06.herokuapp.com/api/v1/funcionario)
+```
+cads-06.herokuapp.com
+```
 
