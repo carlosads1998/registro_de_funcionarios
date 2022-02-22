@@ -10,6 +10,6 @@ class funcionarioSerializer(serializers.ModelSerializer):
                  'ano',
                  'atualizacao',
                  'image',
-                 'sexo',
-                 'status',
+                 
+                 
        )
