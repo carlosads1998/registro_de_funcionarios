@@ -16,6 +16,7 @@ class Base(models.Model):
 
 class funcionario(models.Model):
     
+    
     nome = models.CharField(max_length=250)
     usuario = models.CharField(max_length=100, unique=True)
     identificador = models.IntegerField(unique=True)
