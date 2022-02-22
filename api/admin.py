@@ -3,4 +3,4 @@ from .models import funcionario
 
 @admin.register(funcionario)
 class funcionarioAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'usuario', 'identificador', 'ano', 'image', 'atualizacao', 'sexo', 'status')
+    list_display = ('nome', 'usuario', 'identificador', 'ano', 'image', 'atualizacao')
