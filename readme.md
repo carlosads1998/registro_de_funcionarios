@@ -55,4 +55,3 @@ python manage.py create superuser
 ```
 cads-06.herokuapp.com
 ```
-
