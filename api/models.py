@@ -1,7 +1,6 @@
 from distutils.command.upload import upload
 from email.mime import base
 from lib2to3.pytree import Base
-from random import choice
 from django.db import models
 
 def upload_image_funcionario(instance, filename):
